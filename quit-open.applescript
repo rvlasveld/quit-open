@@ -42,7 +42,7 @@ property pCloseOnTerminateApplications : {"Cisco AnyConnect Secure Mobility Clie
 property pNSWorkspace : class "NSWorkspace"
 
 on run
-        -- Register for notifications of launching and terminating applications	
+  -- Register for notifications of launching and terminating applications	
 	tell (pNSWorkspace's sharedWorkspace())'s notificationCenter()
 		addObserver_selector_name_object_(me, "appQuitNotification:", "NSWorkspaceDidTerminateApplicationNotification", missing value)
 		addObserver_selector_name_object_(me, "appLaunchNotification:", "NSWorkspaceDidLaunchApplicationNotification", missing value)
