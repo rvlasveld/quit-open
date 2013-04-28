@@ -73,7 +73,7 @@ on appQuitNotification_(notification)
 	
 	if theLauchedApplication is in pTriggerTerminateApplications then
 		-- Open the associated applications
-		repeat with applicationToOpen in pOpenOnTerminateApplications
+	  repeat with applicationToOpen in pOpenOnTerminateApplications
 			tell application applicationToOpen to activate
 			
 			-- Try for AppleScript support, because we may want the application to hide
@@ -117,7 +117,7 @@ on enableAppleScripting(theApplication)
 		
 		tell application "Finder"
 			
-			set the application_to_modify to (application file id bundle_identifier) as alias
+		  set the application_to_modify to (application file id bundle_identifier) as alias
 			
 		end tell
 		
