@@ -11,7 +11,7 @@
 --
 --
 -- Github Gist: https://gist.github.com/5429191
--- Blogpost: http://flaxfield.wordpress.com/2013/04/21/open-and-close-applications-when-an-other-launches-or-terminates
+-- Blogpost: http://rvlasveld.github.io/blog/2013/04/21/open-and-close-applications-when-an-other-launches-or-terminates/
 --
  
 --
