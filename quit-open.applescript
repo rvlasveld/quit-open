@@ -11,6 +11,7 @@
 --
 --
 -- Github Gist: https://gist.github.com/5429191
+-- Github repository: https://github.com/rvlasveld/quit-open
 -- Blogpost: http://rvlasveld.github.io/blog/2013/04/21/open-and-close-applications-when-an-other-launches-or-terminates/
 --
 
@@ -134,8 +135,8 @@ on enableAppleScripting(theApplication)
 		do shell script "defaults write " & app_info_path & space & "NSAppleScriptEnabled -bool YES" with administrator privileges
 		do shell script "chmod a+r" & space & app_info_path & ".plist" with administrator privileges
 		
-		if osver ³ "10.7" then
-			if osver ³ "10.8" then
+		if osver ï¿½ "10.7" then
+			if osver ï¿½ "10.8" then
 				-- Assume Xcode is installed
 				do shell script "sudo ln -s /Applications/Xcode.app/Contents/Developer/usr/bin/codesign_allocate /usr/bin" with administrator privileges
 			end if
